@@ -7,20 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA555F992AAE240B00005D2F /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA555F982AAE240B00005D2F /* WebView.swift */; };
+		FA5F38202AA4E9690066FE15 /* Multitab View.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5F381F2AA4E9690066FE15 /* Multitab View.swift */; };
+		FA5F38222AA4EC120066FE15 /* FileUploadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5F38212AA4EC120066FE15 /* FileUploadView.swift */; };
+		FA5F38252AA4EC9E0066FE15 /* Filestack in Frameworks */ = {isa = PBXBuildFile; productRef = FA5F38242AA4EC9E0066FE15 /* Filestack */; };
+		FA5F38272AA4F2630066FE15 /* AboutAppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5F38262AA4F2630066FE15 /* AboutAppView.swift */; };
 		FA83CB862A58B2080098FE1D /* DollarBillApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA83CB852A58B2080098FE1D /* DollarBillApp.swift */; };
-		FA83CB882A58B2080098FE1D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA83CB872A58B2080098FE1D /* ContentView.swift */; };
+		FA83CB882A58B2080098FE1D /* AskAIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA83CB872A58B2080098FE1D /* AskAIView.swift */; };
 		FA83CB8A2A58B2100098FE1D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA83CB892A58B2100098FE1D /* Assets.xcassets */; };
 		FA83CB8D2A58B2100098FE1D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA83CB8C2A58B2100098FE1D /* Preview Assets.xcassets */; };
 		FA83CB952A58B2700098FE1D /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = FA83CB942A58B2700098FE1D /* SwiftyJSON */; };
 		FA83CB982A58B2920098FE1D /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = FA83CB972A58B2920098FE1D /* Alamofire */; };
+		FAB843A42AB75CDA008E92D9 /* DollarBillObjectDetection 220.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = FAB843A32AB75CD9008E92D9 /* DollarBillObjectDetection 220.mlmodel */; };
+		FAB843A62AB75D6F008E92D9 /* ObjectDetectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB843A52AB75D6F008E92D9 /* ObjectDetectionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FA555F982AAE240B00005D2F /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		FA5F381F2AA4E9690066FE15 /* Multitab View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Multitab View.swift"; sourceTree = "<group>"; };
+		FA5F38212AA4EC120066FE15 /* FileUploadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileUploadView.swift; sourceTree = "<group>"; };
+		FA5F38262AA4F2630066FE15 /* AboutAppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutAppView.swift; sourceTree = "<group>"; };
 		FA83CB822A58B2080098FE1D /* DollarBill.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DollarBill.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA83CB852A58B2080098FE1D /* DollarBillApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DollarBillApp.swift; sourceTree = "<group>"; };
-		FA83CB872A58B2080098FE1D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FA83CB872A58B2080098FE1D /* AskAIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AskAIView.swift; sourceTree = "<group>"; };
 		FA83CB892A58B2100098FE1D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA83CB8C2A58B2100098FE1D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FAB843A32AB75CD9008E92D9 /* DollarBillObjectDetection 220.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = "DollarBillObjectDetection 220.mlmodel"; sourceTree = "<group>"; };
+		FAB843A52AB75D6F008E92D9 /* ObjectDetectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectDetectionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +42,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA83CB952A58B2700098FE1D /* SwiftyJSON in Frameworks */,
+				FA5F38252AA4EC9E0066FE15 /* Filestack in Frameworks */,
 				FA83CB982A58B2920098FE1D /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -56,7 +70,13 @@
 			isa = PBXGroup;
 			children = (
 				FA83CB852A58B2080098FE1D /* DollarBillApp.swift */,
-				FA83CB872A58B2080098FE1D /* ContentView.swift */,
+				FA83CB872A58B2080098FE1D /* AskAIView.swift */,
+				FA5F38262AA4F2630066FE15 /* AboutAppView.swift */,
+				FAB843A32AB75CD9008E92D9 /* DollarBillObjectDetection 220.mlmodel */,
+				FAB843A52AB75D6F008E92D9 /* ObjectDetectionView.swift */,
+				FA555F982AAE240B00005D2F /* WebView.swift */,
+				FA5F38212AA4EC120066FE15 /* FileUploadView.swift */,
+				FA5F381F2AA4E9690066FE15 /* Multitab View.swift */,
 				FA83CB892A58B2100098FE1D /* Assets.xcassets */,
 				FA83CB8B2A58B2100098FE1D /* Preview Content */,
 			);
@@ -90,6 +110,7 @@
 			packageProductDependencies = (
 				FA83CB942A58B2700098FE1D /* SwiftyJSON */,
 				FA83CB972A58B2920098FE1D /* Alamofire */,
+				FA5F38242AA4EC9E0066FE15 /* Filestack */,
 			);
 			productName = DollarBill;
 			productReference = FA83CB822A58B2080098FE1D /* DollarBill.app */;
@@ -122,6 +143,7 @@
 			packageReferences = (
 				FA83CB932A58B2700098FE1D /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
 				FA83CB962A58B2920098FE1D /* XCRemoteSwiftPackageReference "Alamofire" */,
+				FA5F38232AA4EC9E0066FE15 /* XCRemoteSwiftPackageReference "filestack-ios" */,
 			);
 			productRefGroup = FA83CB832A58B2080098FE1D /* Products */;
 			projectDirPath = "";
@@ -149,8 +171,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA83CB882A58B2080098FE1D /* ContentView.swift in Sources */,
+				FAB843A42AB75CDA008E92D9 /* DollarBillObjectDetection 220.mlmodel in Sources */,
+				FA83CB882A58B2080098FE1D /* AskAIView.swift in Sources */,
+				FA5F38272AA4F2630066FE15 /* AboutAppView.swift in Sources */,
+				FA5F38202AA4E9690066FE15 /* Multitab View.swift in Sources */,
+				FA555F992AAE240B00005D2F /* WebView.swift in Sources */,
+				FAB843A62AB75D6F008E92D9 /* ObjectDetectionView.swift in Sources */,
 				FA83CB862A58B2080098FE1D /* DollarBillApp.swift in Sources */,
+				FA5F38222AA4EC120066FE15 /* FileUploadView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -353,6 +381,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		FA5F38232AA4EC9E0066FE15 /* XCRemoteSwiftPackageReference "filestack-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/filestack/filestack-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
 		FA83CB932A58B2700098FE1D /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON";
@@ -372,6 +408,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		FA5F38242AA4EC9E0066FE15 /* Filestack */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FA5F38232AA4EC9E0066FE15 /* XCRemoteSwiftPackageReference "filestack-ios" */;
+			productName = Filestack;
+		};
 		FA83CB942A58B2700098FE1D /* SwiftyJSON */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = FA83CB932A58B2700098FE1D /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
