@@ -12,15 +12,20 @@ import UIKit
 
 import Alamofire
 import SwiftyJSON
+import AVFoundation
 
 
 struct ObjectDetectionView: View {
+    
+    
     @State private var resultText=""
     @State private var showingImagePicker=false
     @State private var inputImage: UIImage? = UIImage(named:"1024.png")
     
     @State var detectedObjects: [String] = []
     
+    //let synthesizer = AVSpeechSynthesizer()
+    let speaker = Speaker()
     
     //@State private var image: UIImage?
     //@State private var boxes: [ShapeView] = []
@@ -29,7 +34,7 @@ struct ObjectDetectionView: View {
         HStack {
             VStack (alignment: .center,
                     spacing: 20){
-                Text("Check for trash")
+                Text("Dollar Bill Detector")
                     .font(.system(size:42))
                     .fontWeight(.bold)
                     .padding(10)
@@ -41,7 +46,7 @@ struct ObjectDetectionView: View {
                 //Text(resultText)
                 Image(uiImage: inputImage!).resizable()
                     .aspectRatio(contentMode: .fit)
-                Button("Is this trash?"){
+                Button("Identify Bill"){
                     self.buttonPressed()
                 }
                 .padding(.all, 14.0)
@@ -66,13 +71,15 @@ struct ObjectDetectionView: View {
             print("No image selected")
             return
         }
-        let model1=DollarBillObjectDetection_220().model
-        guard let model = try? VNCoreMLModel(for: model1) else {
+        //let model1 = try! DollarBillObjDetectionV2Iter6000()
+        let model1 = DollarBillObjectDetection_220()
+        guard let model = try? VNCoreMLModel(for: model1.model) else {
                 fatalError("Failed to load Core ML model.")
             }
             let request = VNCoreMLRequest(model: model) { request, error in
                 guard let results = request.results as? [VNRecognizedObjectObservation], !results.isEmpty else {
-                    print("Unexpected result type from VNCoreMLRequest.")
+                    print("No object detected")
+                    speaker.speak(msg: "No bill detected")
                     return
                 }
                 // Draw bounding boxes around the detected objects
@@ -83,6 +90,9 @@ struct ObjectDetectionView: View {
                          let observationBounds = observation.boundingBox
                          let objectBounds = observationBounds.applying(scale).applying(transform)
                          let label = observation.labels[0].identifier
+                    //say(string: label)
+                    speaker.speak(msg: label)
+                    print(observation.labels[0].identifier)
                     
                          return (objectBounds, label)
                      }
@@ -137,7 +147,15 @@ struct ObjectDetectionView: View {
         UIGraphicsEndImageContext()
     }
     
-    
+    /*
+    func say(string: String) {
+        let utterance = AVSpeechUtterance(string: string)
+            utterance.voice = AVSpeechSynthesisVoice(language: "en-US")
+            utterance.rate = 0.5
+
+            synthesizer.speak(utterance)
+        }
+    */
     
     
 }
