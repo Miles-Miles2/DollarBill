@@ -18,6 +18,8 @@
 		FA83CB8D2A58B2100098FE1D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA83CB8C2A58B2100098FE1D /* Preview Assets.xcassets */; };
 		FA83CB952A58B2700098FE1D /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = FA83CB942A58B2700098FE1D /* SwiftyJSON */; };
 		FA83CB982A58B2920098FE1D /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = FA83CB972A58B2920098FE1D /* Alamofire */; };
+		FAA144372AC0956500AD10B1 /* DollarBillObjDetectionV2Iter6000.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = FAA144362AC0956500AD10B1 /* DollarBillObjDetectionV2Iter6000.mlmodel */; };
+		FAA144392AC0A14200AD10B1 /* speaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA144382AC0A14200AD10B1 /* speaker.swift */; };
 		FAB843A42AB75CDA008E92D9 /* DollarBillObjectDetection 220.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = FAB843A32AB75CD9008E92D9 /* DollarBillObjectDetection 220.mlmodel */; };
 		FAB843A62AB75D6F008E92D9 /* ObjectDetectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB843A52AB75D6F008E92D9 /* ObjectDetectionView.swift */; };
 /* End PBXBuildFile section */
@@ -32,6 +34,8 @@
 		FA83CB872A58B2080098FE1D /* AskAIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AskAIView.swift; sourceTree = "<group>"; };
 		FA83CB892A58B2100098FE1D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA83CB8C2A58B2100098FE1D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FAA144362AC0956500AD10B1 /* DollarBillObjDetectionV2Iter6000.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = DollarBillObjDetectionV2Iter6000.mlmodel; sourceTree = "<group>"; };
+		FAA144382AC0A14200AD10B1 /* speaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = speaker.swift; sourceTree = "<group>"; };
 		FAB843A32AB75CD9008E92D9 /* DollarBillObjectDetection 220.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = "DollarBillObjectDetection 220.mlmodel"; sourceTree = "<group>"; };
 		FAB843A52AB75D6F008E92D9 /* ObjectDetectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectDetectionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -69,11 +73,13 @@
 		FA83CB842A58B2080098FE1D /* DollarBill */ = {
 			isa = PBXGroup;
 			children = (
+				FAA144362AC0956500AD10B1 /* DollarBillObjDetectionV2Iter6000.mlmodel */,
 				FA83CB852A58B2080098FE1D /* DollarBillApp.swift */,
 				FA83CB872A58B2080098FE1D /* AskAIView.swift */,
 				FA5F38262AA4F2630066FE15 /* AboutAppView.swift */,
 				FAB843A32AB75CD9008E92D9 /* DollarBillObjectDetection 220.mlmodel */,
 				FAB843A52AB75D6F008E92D9 /* ObjectDetectionView.swift */,
+				FAA144382AC0A14200AD10B1 /* speaker.swift */,
 				FA555F982AAE240B00005D2F /* WebView.swift */,
 				FA5F38212AA4EC120066FE15 /* FileUploadView.swift */,
 				FA5F381F2AA4E9690066FE15 /* Multitab View.swift */,
@@ -174,6 +180,8 @@
 				FAB843A42AB75CDA008E92D9 /* DollarBillObjectDetection 220.mlmodel in Sources */,
 				FA83CB882A58B2080098FE1D /* AskAIView.swift in Sources */,
 				FA5F38272AA4F2630066FE15 /* AboutAppView.swift in Sources */,
+				FAA144392AC0A14200AD10B1 /* speaker.swift in Sources */,
+				FAA144372AC0956500AD10B1 /* DollarBillObjDetectionV2Iter6000.mlmodel in Sources */,
 				FA5F38202AA4E9690066FE15 /* Multitab View.swift in Sources */,
 				FA555F992AAE240B00005D2F /* WebView.swift in Sources */,
 				FAB843A62AB75D6F008E92D9 /* ObjectDetectionView.swift in Sources */,
