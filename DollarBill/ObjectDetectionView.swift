@@ -14,6 +14,8 @@ import Alamofire
 import SwiftyJSON
 import AVFoundation
 
+//test
+
 
 struct ObjectDetectionView: View {
     
@@ -24,8 +26,10 @@ struct ObjectDetectionView: View {
     
     @State var detectedObjects: [String] = []
     
+    let audioPlayer = sayResult()
+    
     //let synthesizer = AVSpeechSynthesizer()
-    let speaker = Speaker()
+    //let speaker = Speaker()
     
     //@State private var image: UIImage?
     //@State private var boxes: [ShapeView] = []
@@ -79,7 +83,7 @@ struct ObjectDetectionView: View {
             let request = VNCoreMLRequest(model: model) { request, error in
                 guard let results = request.results as? [VNRecognizedObjectObservation], !results.isEmpty else {
                     print("No object detected")
-                    speaker.speak(msg: "No bill detected")
+                    //speaker.speak(msg: "No bill detected")
                     return
                 }
                 // Draw bounding boxes around the detected objects
@@ -91,10 +95,11 @@ struct ObjectDetectionView: View {
                          let objectBounds = observationBounds.applying(scale).applying(transform)
                          let label = observation.labels[0].identifier
                     //say(string: label)
-                    speaker.speak(msg: label)
-                    print(observation.labels[0].identifier)
+                    //speaker.speak(msg: label)
+                    audioPlayer.playResult(billClass: label)
+                        print(observation.labels[0].identifier)
                     
-                         return (objectBounds, label)
+                        return (objectBounds, label)
                      }
                 
                 DispatchQueue.main.async {

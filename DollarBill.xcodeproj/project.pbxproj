@@ -20,8 +20,15 @@
 		FA83CB982A58B2920098FE1D /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = FA83CB972A58B2920098FE1D /* Alamofire */; };
 		FAA144372AC0956500AD10B1 /* DollarBillObjDetectionV2Iter6000.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = FAA144362AC0956500AD10B1 /* DollarBillObjDetectionV2Iter6000.mlmodel */; };
 		FAA144392AC0A14200AD10B1 /* speaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA144382AC0A14200AD10B1 /* speaker.swift */; };
+		FAB7CF062AD313CF009DEA11 /* 5Dollars.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FAB7CF012AD313CD009DEA11 /* 5Dollars.m4a */; };
+		FAB7CF072AD313CF009DEA11 /* 100Dollars.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FAB7CF022AD313CD009DEA11 /* 100Dollars.m4a */; };
+		FAB7CF082AD313CF009DEA11 /* 10Dollars.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FAB7CF032AD313CE009DEA11 /* 10Dollars.m4a */; };
+		FAB7CF092AD313CF009DEA11 /* 20Dollars.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FAB7CF042AD313CE009DEA11 /* 20Dollars.m4a */; };
+		FAB7CF0A2AD313CF009DEA11 /* 1Dollar.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FAB7CF052AD313CE009DEA11 /* 1Dollar.m4a */; };
 		FAB843A42AB75CDA008E92D9 /* DollarBillObjectDetection 220.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = FAB843A32AB75CD9008E92D9 /* DollarBillObjectDetection 220.mlmodel */; };
 		FAB843A62AB75D6F008E92D9 /* ObjectDetectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB843A52AB75D6F008E92D9 /* ObjectDetectionView.swift */; };
+		FAF576192AC9D1A5007EC561 /* audioPlayerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF576182AC9D1A5007EC561 /* audioPlayerTest.swift */; };
+		FAF5761B2AC9D20B007EC561 /* FiveDollarsM4A.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FAF5761A2AC9D20B007EC561 /* FiveDollarsM4A.m4a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,8 +43,15 @@
 		FA83CB8C2A58B2100098FE1D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FAA144362AC0956500AD10B1 /* DollarBillObjDetectionV2Iter6000.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = DollarBillObjDetectionV2Iter6000.mlmodel; sourceTree = "<group>"; };
 		FAA144382AC0A14200AD10B1 /* speaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = speaker.swift; sourceTree = "<group>"; };
+		FAB7CF012AD313CD009DEA11 /* 5Dollars.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 5Dollars.m4a; sourceTree = "<group>"; };
+		FAB7CF022AD313CD009DEA11 /* 100Dollars.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 100Dollars.m4a; sourceTree = "<group>"; };
+		FAB7CF032AD313CE009DEA11 /* 10Dollars.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 10Dollars.m4a; sourceTree = "<group>"; };
+		FAB7CF042AD313CE009DEA11 /* 20Dollars.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 20Dollars.m4a; sourceTree = "<group>"; };
+		FAB7CF052AD313CE009DEA11 /* 1Dollar.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 1Dollar.m4a; sourceTree = "<group>"; };
 		FAB843A32AB75CD9008E92D9 /* DollarBillObjectDetection 220.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = "DollarBillObjectDetection 220.mlmodel"; sourceTree = "<group>"; };
 		FAB843A52AB75D6F008E92D9 /* ObjectDetectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectDetectionView.swift; sourceTree = "<group>"; };
+		FAF576182AC9D1A5007EC561 /* audioPlayerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = audioPlayerTest.swift; sourceTree = "<group>"; };
+		FAF5761A2AC9D20B007EC561 /* FiveDollarsM4A.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = FiveDollarsM4A.m4a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +87,12 @@
 		FA83CB842A58B2080098FE1D /* DollarBill */ = {
 			isa = PBXGroup;
 			children = (
+				FAF5761A2AC9D20B007EC561 /* FiveDollarsM4A.m4a */,
+				FAB7CF052AD313CE009DEA11 /* 1Dollar.m4a */,
+				FAB7CF012AD313CD009DEA11 /* 5Dollars.m4a */,
+				FAB7CF032AD313CE009DEA11 /* 10Dollars.m4a */,
+				FAB7CF042AD313CE009DEA11 /* 20Dollars.m4a */,
+				FAB7CF022AD313CD009DEA11 /* 100Dollars.m4a */,
 				FAA144362AC0956500AD10B1 /* DollarBillObjDetectionV2Iter6000.mlmodel */,
 				FA83CB852A58B2080098FE1D /* DollarBillApp.swift */,
 				FA83CB872A58B2080098FE1D /* AskAIView.swift */,
@@ -80,6 +100,7 @@
 				FAB843A32AB75CD9008E92D9 /* DollarBillObjectDetection 220.mlmodel */,
 				FAB843A52AB75D6F008E92D9 /* ObjectDetectionView.swift */,
 				FAA144382AC0A14200AD10B1 /* speaker.swift */,
+				FAF576182AC9D1A5007EC561 /* audioPlayerTest.swift */,
 				FA555F982AAE240B00005D2F /* WebView.swift */,
 				FA5F38212AA4EC120066FE15 /* FileUploadView.swift */,
 				FA5F381F2AA4E9690066FE15 /* Multitab View.swift */,
@@ -165,8 +186,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAB7CF072AD313CF009DEA11 /* 100Dollars.m4a in Resources */,
+				FAB7CF092AD313CF009DEA11 /* 20Dollars.m4a in Resources */,
+				FAB7CF0A2AD313CF009DEA11 /* 1Dollar.m4a in Resources */,
 				FA83CB8D2A58B2100098FE1D /* Preview Assets.xcassets in Resources */,
 				FA83CB8A2A58B2100098FE1D /* Assets.xcassets in Resources */,
+				FAB7CF062AD313CF009DEA11 /* 5Dollars.m4a in Resources */,
+				FAF5761B2AC9D20B007EC561 /* FiveDollarsM4A.m4a in Resources */,
+				FAB7CF082AD313CF009DEA11 /* 10Dollars.m4a in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -187,6 +214,7 @@
 				FAB843A62AB75D6F008E92D9 /* ObjectDetectionView.swift in Sources */,
 				FA83CB862A58B2080098FE1D /* DollarBillApp.swift in Sources */,
 				FA5F38222AA4EC120066FE15 /* FileUploadView.swift in Sources */,
+				FAF576192AC9D1A5007EC561 /* audioPlayerTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,11 +346,14 @@
 				DEVELOPMENT_TEAM = TXY6463F6B;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "App needs image to identify dollar bill";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "App needs image to identify dollar bill";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -330,6 +361,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = MilesK.DollarBill;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -347,11 +381,14 @@
 				DEVELOPMENT_TEAM = TXY6463F6B;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "App needs image to identify dollar bill";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "App needs image to identify dollar bill";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -359,6 +396,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = MilesK.DollarBill;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
