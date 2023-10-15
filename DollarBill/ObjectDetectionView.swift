@@ -38,10 +38,12 @@ struct ObjectDetectionView: View {
         HStack {
             VStack (alignment: .center,
                     spacing: 20){
-                Text("Dollar Bill Detector")
+                Text("Identify Bills")
                     .font(.system(size:42))
                     .fontWeight(.bold)
                     .padding(10)
+                Text("Click the button below and we will tell you what the denomination of the bill is")
+                    .font(.system(size:18))
                 /*
                 if !detectedObjects.isEmpty {
                               Text("Detected Objects: \(detectedObjects.joined(separator: ", "))")
@@ -50,7 +52,7 @@ struct ObjectDetectionView: View {
                 //Text(resultText)
                 Image(uiImage: inputImage!).resizable()
                     .aspectRatio(contentMode: .fit)
-                Button("Identify Bill"){
+                Button("Upload Bill"){
                     self.buttonPressed()
                 }
                 .padding(.all, 14.0)

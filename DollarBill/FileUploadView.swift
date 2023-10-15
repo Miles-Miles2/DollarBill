@@ -13,26 +13,27 @@ struct FileUploadView: View {
     @State var animalName = " "
     @State private var showingImagePicker = false
     @State private var inputImage: UIImage? = UIImage(named: "1024")
-    let instructions = "Click the green button below, then select an image by clicking it. It will automatically be uploaded."
+    let instructions = "Help improve our system by providing more dollar bills in different environments/backgrounds/lighting for our model to train on."
     
     var body: some View {
         ZStack(){
-            Color(UIColor(red: 0.5, green: 0.7, blue: 0.5, alpha: 1))
-                .ignoresSafeArea()
+            //Color(UIColor(red: 0.1, green: 0.2, blue: 0.1, alpha: 0.5))
+            //    .ignoresSafeArea()
             HStack {
                 VStack (alignment: .center,
                         spacing: 20){
-                    Text("Upload Image")
+                    Text("Crowdsourcing")
                         .font(.system(.largeTitle, design: .rounded))
                         .fontWeight(.bold)
                     Text(instructions)
                         .padding(.horizontal, 10)
+                        .font(.system(size:18))
                     if let l=inputImage {
                         Image(uiImage: l).resizable()
                             .aspectRatio(contentMode: .fit)
                     }
                     
-                    Button("Click to Upload Image"){
+                    Button("Upload Dollar Bill"){
                         self.buttonPressed()
                     }
                     .padding(.all, 14.0)
